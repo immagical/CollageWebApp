@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src = https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js> </script>
+        <link rel="stylesheet" href = "style.css"> 
+        <script src = "main.js"></script>
+        <title> Collage Web App </title>
+    </head>
+    <body>
+        <center> 
+            <h1 class = "col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"> Collage Web App </h1>
+            <h4> As soon as the popup appears, please click Allow. After you've spoken a command</h4>
+            <h3> Say "selfie" to take your selfie and make a collage. Three pictures will be taken.  </h3>
+            <button onclick = "start_app()"> Start </button>
+            <h4> Press the start button </h4>
+            <label> Webcam: </label>
+            <br> 
+            <div id = "camera"> </div>
+            <br> <br> 
+            <div id = "resultShow">
+                <a id = "link" href = "" download="myselfie.png"> First Picture: </a>
+                <br> 
+                <img id = "first_picture" src = "cutebearselfie.avif">
+                <br> 
+                <a id = "link" href = "" download="myselfie.png"> Second Picture: </a>
+                <br> 
+                <img id = "second_picture" src = "selfie.jpeg">
+                <br>
+                <a id = "link" href = "" download="myselfie.png"> Third Picture: </a>
+                <br> 
+                <img id = "third_picture" src = "bearselfie.jpeg">
+            </div>
+            <div class = "copy_right_footer"> 
+                Developed by <a href = "mailto:jiya.r.rao@gmail.com"> Jiya Rao </a>
+            </div>
+        </center>
+    </body>
+</html>
