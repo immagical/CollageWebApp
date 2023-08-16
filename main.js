@@ -22,7 +22,7 @@ function Speak() {
     setTimeout(function(){
         img_id = "selfie1"; 
         takeSnapshot()
-        speak_data = "Taking your next selfie in 10 seconds"; 
+        speak_data = "Taking your next selfie in the next 5 seconds"; 
         var utterThis = new SpeechSynthesisUtterance(speak_data);
         synth.speak(utterThis); 
     },5000);
@@ -31,8 +31,9 @@ Webcam.set({
     width : 350,
     height : 300, 
     image_format : "png",
-    png_quality : 100 
-    
+    png_quality : 100, 
+    crop_width : 300, 
+    crop_height : 250
 }); 
 
 camera = document.getElementById("camera")
@@ -46,7 +47,7 @@ function takeSnapshot() {
             setTimeout(function(){
                 img_id = "selfie2"; 
                 takeSnapshot()
-                speak_data = "Taking your last selfie in 10 seconds"; 
+                speak_data = "Taking your last selfie in the next 5 seconds"; 
                 var utterThis = new SpeechSynthesisUtterance(speak_data);
                 synth.speak(utterThis); 
             },5000);
